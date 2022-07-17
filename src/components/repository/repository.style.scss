@@ -1,0 +1,48 @@
+@import "../../assets/styles/variables";
+
+.repository-wrapper {
+  width: 100%;
+  justify-content: space-between;
+  padding: $largeSize;
+  border-radius: $smallSize;
+  box-shadow: 0 0 10px 0 #0000001a;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: $mediumSize;
+  }
+
+  .repository-wrapper__name {
+    width: 20%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  .repository-wrapper__description {
+    width: 40%;
+    text-align: justify;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  .repository-wrapper__url {
+    width: 20%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  .repository-wrapper__stars {
+    cursor: pointer;
+    width: 20%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}

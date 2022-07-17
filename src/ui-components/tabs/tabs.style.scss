@@ -1,0 +1,36 @@
+@import "../../assets/styles/variables";
+
+.tabs {
+  display: flex;
+
+  .tab {
+    width: 100%;
+    border: unset;
+
+    &:first-child {
+      border-radius: $mediumSize 0 0 $mediumSize;
+    }
+
+    &:last-child {
+      border-radius: 0 $mediumSize $mediumSize 0;
+    }
+
+    &.active {
+      background: #2d84fb;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+
+.panels {
+  .panel {
+    display: none;
+    padding: $mediumSize;
+
+    &.active {
+      display: grid;
+      gap: $mediumSize;
+    }
+  }
+}

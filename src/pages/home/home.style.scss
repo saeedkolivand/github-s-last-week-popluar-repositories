@@ -1,0 +1,12 @@
+@import "../../assets/styles/variables";
+
+.home-wrapper {
+  .home-wrapper--header {
+    margin-top: $largeSize;
+    text-align: center;
+  }
+
+  .home-wrapper--todo-input {
+    gap: $mediumSize;
+  }
+}
