@@ -3,7 +3,7 @@ import { initLoadingPortal } from "ui-components/loading/loading.test";
 import { initErrorModalPortal } from "ui-components/error/error.test";
 import store from "app/redux/store";
 import React from "react";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider } from "react-redux";
 import RepositorySlice, {
   addLastWeekPopularRepositoriesAction,
