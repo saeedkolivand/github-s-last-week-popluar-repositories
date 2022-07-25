@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import store from "app/redux/store";
 import Home from "pages/home/Home";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import ErrorBoundary from "app/errorBoundary/ErrorBoundary";
+import ErrorBoundary from "components/errorBoundary/ErrorBoundary";
 
 const queryClient = new QueryClient({
   defaultOptions: {
